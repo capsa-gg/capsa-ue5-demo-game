@@ -1,0 +1,19 @@
+﻿& "$env:UEROOT\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun `
+    -project="$(Get-Location)\CapsaDemo.uproject" `
+    -noP4 `
+    -platform=Win64 `
+    -clientconfig=Shipping `
+    -serverconfig=Shipping `
+    -archive `
+    -cook `
+    -stage `
+    -allmaps `
+    -build `
+    -pak `
+    -distribution `
+    -debug `
+    -target=CapsaDemo+CapsaDemoServer `
+    -archivedirectory="$(Get-Location)\BuildArtifacts\Shipping" `
+    -server `
+    -nocompileeditor `
+    -skipbuildeditor

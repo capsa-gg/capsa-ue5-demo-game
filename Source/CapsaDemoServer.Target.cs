@@ -3,11 +3,11 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class CapsaDemoTarget : TargetRules
+public class CapsaDemoServerTarget : TargetRules
 {
-	public CapsaDemoTarget(TargetInfo Target) : base(Target)
+	public CapsaDemoServerTarget(TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Game;
+		Type = TargetType.Server;
 		DefaultBuildSettings = BuildSettingsVersion.V5;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal5_5;
 		ExtraModuleNames.Add("CapsaDemo");
