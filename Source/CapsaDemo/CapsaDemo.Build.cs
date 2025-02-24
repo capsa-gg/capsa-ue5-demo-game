@@ -8,6 +8,6 @@ public class CapsaDemo : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[] { "CapsaCore", "Core", "CoreUObject", "Engine", "HTTP", "InputCore", "EnhancedInput" });
 	}
 }

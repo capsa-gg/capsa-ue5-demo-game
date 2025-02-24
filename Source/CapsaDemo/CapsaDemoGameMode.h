@@ -6,6 +6,8 @@
 #include "GameFramework/GameModeBase.h"
 #include "CapsaDemoGameMode.generated.h"
 
+DECLARE_LOG_CATEGORY_EXTERN(LogCapsaDemoGameMode, Log, All);
+
 UCLASS(minimalapi)
 class ACapsaDemoGameMode : public AGameModeBase
 {
@@ -13,6 +15,8 @@ class ACapsaDemoGameMode : public AGameModeBase
 
 public:
 	ACapsaDemoGameMode();
+
+	virtual void PreLogin(const FString& Options, const FString& Address, const FUniqueNetIdRepl& UniqueId, FString& ErrorMessage) override;
 };
 
 
