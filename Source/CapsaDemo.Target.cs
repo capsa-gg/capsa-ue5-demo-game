@@ -14,5 +14,6 @@ public class CapsaDemoTarget : TargetRules
 		
 		bUseLoggingInShipping = true;
 		BuildEnvironment = TargetBuildEnvironment.Unique;
+		GlobalDefinitions.Add("WITH_CAPSA_LOG_ENABLED=1");
 	}
 }
